@@ -1,0 +1,18 @@
+-- Insert data into the Books table
+INSERT INTO "SYSTEM"."BOOKS" (ISBN, TITLE, AUTHOR, PUBLISHER, YEAR_PUBLISHED, GENRE, COPIES_AVAILABLE)
+VALUES ('978-0-06-112008-4', 'To Kill a Mockingbird', 'Harper Lee', 'HarperCollins', 1960, 'Fiction', 10);
+
+INSERT INTO "SYSTEM"."BOOKS" (ISBN, TITLE, AUTHOR, PUBLISHER, YEAR_PUBLISHED, GENRE, COPIES_AVAILABLE)
+VALUES ('978-1-41-694965-7', 'The Hunger Games', 'Suzanne Collins', 'Scholastic', 2008, 'Dystopian', 15);
+
+-- Insert data into the Members table
+INSERT INTO "SYSTEM"."MEMBERS" (MEMBER_ID, NAME, ADDRESS, PHONE_NUMBER)
+VALUES (1, 'John Doe', '123 Main St', '555-1234');
+
+INSERT INTO "SYSTEM"."MEMBERS" (MEMBER_ID, NAME, ADDRESS, PHONE_NUMBER)
+VALUES (2, 'Jane Smith', '456 Oak St', '555-5678');
+
+-- Insert data into the Borrowing Records table
+INSERT INTO "SYSTEM"."BORROWING_RECORDS" (RECORD_ID, MEMBER_ID, ISBN, BORROW_DATE, RETURN_DATE, STATUS)
+VALUES (1, 1, '978-0-06-112008-4', TO_DATE('2024-10-01', 'YYYY-MM-DD'), TO_DATE('2024-10-15', 'YYYY-MM-DD'), 'Borrowed');
+

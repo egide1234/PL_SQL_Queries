@@ -1,0 +1,27 @@
+
+INSERT INTO "SYSTEM"."BOOKS" (ISBN, TITLE, AUTHOR, PUBLISHER, YEAR_PUBLISHED, GENRE, COPIES_AVAILABLE) VALUES ('1', 'To Kill a Mockingbird', 'Harper Lee', 'haper lee', '2001', 'Horror', '15000')
+INSERT INTO "SYSTEM"."BOOKS" (ISBN, TITLE, AUTHOR, PUBLISHER, YEAR_PUBLISHED, GENRE, COPIES_AVAILABLE) VALUES ('2', 'MY story', 'Daniels', 'Daniels', '2003', 'Education', '17000')
+INSERT INTO "SYSTEM"."BOOKS" (ISBN, TITLE, AUTHOR, PUBLISHER, YEAR_PUBLISHED, GENRE, COPIES_AVAILABLE) VALUES ('3', 'Love story', 'ketty', 'Shalob]n', '2004', 'Roman', '20000')
+
+Commit Successful
+
+
+INSERT INTO "SYSTEM"."BOOKS" (ISBN, TITLE, AUTHOR, PUBLISHER, YEAR_PUBLISHED, GENRE, COPIES_AVAILABLE) VALUES ('12', 'the future', 'mathias', 'matheus', '2003', 'story', '2000')
+
+Commit Successful
+
+
+DELETE FROM "SYSTEM"."BOOKS" WHERE ROWID = 'AAATMzAABAAAifZAAB' AND ORA_ROWSCN = '9339814' and ( "ISBN" is null or "ISBN" is not null )
+
+Commit Successful
+
+
+UPDATE "SYSTEM"."BOOKS" SET ISBN = '45', PUBLISHER = 'darius' WHERE ROWID = 'AAATMzAABAAAifZAAA' AND ORA_ROWSCN = '9340082'
+
+Commit Successful
+
+
+UPDATE "SYSTEM"."BOOKS" SET TITLE = 'Love stories', COPIES_AVAILABLE = '1999' WHERE ROWID = 'AAATMzAABAAAifZAAC' AND ORA_ROWSCN = '9340483'
+
+Commit Successful
+
